@@ -1,20 +1,14 @@
 import React from 'react'
 import marked from 'marked'
+import Head from 'next/head'
 
 import { posts } from '../api/posts'
 
 
 export default class PostPage extends React.Component {
   static async getInitialProps ({req}) {
-    console.log(req, this.props)
     return posts[0]
   }
-
-  constructor(props) {
-    super(props)
-    console.log(this.props.url)
-  }
-
 
   parseMarkdown(input) {
     return { __html: marked(input) }
@@ -22,7 +16,12 @@ export default class PostPage extends React.Component {
 
   render() {
     return (
-      <div dangerouslySetInnerHTML={this.parseMarkdown(posts[this.props.url.query.id].body)}></div>
+      <div>
+        <Head>
+          <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"/>
+        </Head>
+        <div dangerouslySetInnerHTML={this.parseMarkdown(posts[this.props.url.query.id].body)}></div>
+      </div>
     )
   }
 }
