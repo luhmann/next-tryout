@@ -1,0 +1,33 @@
+{
+  "name": "next-tryout",
+  "version": "1.0.0",
+  "description": "Just a quick tryout of next.js",
+  "author": "Jan Florian Dietrich <jfd@daenen4.de> (http://luhmann.me/)",
+  "main": "index.js",
+  "scripts": {
+    "start": "next",
+    "lint": "eslint --ext .js src test",
+    "test": "mocha --require intelli-espower-loader test/**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luhmann/next-tryout.git"
+  },
+  "engines": {
+    "node": ">=6.9.1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "marked": "^0.3.6",
+    "next": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.8.1",
+    "eslint-config-standard": "^6.2.0",
+    "eslint-plugin-promise": "^3.3.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^3.1.2",
+    "power-assert": "^1.4.1"
+  }
+}

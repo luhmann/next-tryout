@@ -1,0 +1,20 @@
+{
+  "extends": "standard",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "script",
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "es6": true,
+    "commonjs": true,
+    "protractor": true
+  },
+  "rules": {
+  }
+}
