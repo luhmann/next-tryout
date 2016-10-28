@@ -6,6 +6,9 @@
   "main": "index.js",
   "scripts": {
     "start": "next",
+    "build": "next build",
+    "start:production": "next start",
+    "mocks": "dyson mocks 8000",
     "lint": "eslint --ext .js src test",
     "test": "mocha --require intelli-espower-loader test/**/*.spec.js"
   },
@@ -19,14 +22,17 @@
   "license": "MIT",
   "dependencies": {
     "marked": "^0.3.6",
-    "next": "^1.0.0"
+    "next": "^1.0.0",
+    "node-fetch": "^1.6.3"
   },
   "devDependencies": {
+    "dyson": "^0.10.0",
     "eslint": "^3.8.1",
     "eslint-config-standard": "^6.2.0",
     "eslint-plugin-promise": "^3.3.0",
     "eslint-plugin-standard": "^2.0.1",
     "intelli-espower-loader": "^1.0.1",
+    "json-loader": "^0.5.4",
     "mocha": "^3.1.2",
     "power-assert": "^1.4.1"
   }

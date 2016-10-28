@@ -1,4 +1,7 @@
 import React from 'react'
+import fetch from 'node-fetch'
+
+import PageHeader from '../components/PageHeader'
 
 export default class AsyncTryout extends React.Component {
   static async getInitialProps ({req}) {
@@ -8,7 +11,8 @@ export default class AsyncTryout extends React.Component {
   render() {
     return (
       <div>
-        This is the async test page {this.props.id}
+        <PageHeader></PageHeader>
+        <div>This is the async test page {this.props.id}</div>
       </div>
     )
   }
