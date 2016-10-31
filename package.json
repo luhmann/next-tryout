@@ -23,7 +23,8 @@
   "dependencies": {
     "marked": "^0.3.6",
     "next": "^1.0.0",
-    "node-fetch": "^1.6.3"
+    "node-fetch": "^1.6.3",
+    "styled-components": "^1.0.9"
   },
   "devDependencies": {
     "dyson": "^0.10.0",
